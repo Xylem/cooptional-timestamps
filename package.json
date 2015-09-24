@@ -1,0 +1,22 @@
+{
+  "name": "cooptional-timestamps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xylem",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "2.10.1",
+    "fast-levenshtein": "1.0.7",
+    "fluent-ffmpeg": "2.0.1",
+    "lodash": "3.10.1",
+    "node-tesseract": "0.2.7",
+    "printf": "0.2.3",
+    "rimraf": "2.4.3",
+    "stream-to-promise": "1.0.4",
+    "ytdl-core": "0.6.0"
+  }
+}
