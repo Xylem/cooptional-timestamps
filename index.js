@@ -49,8 +49,6 @@ fs.mkdirAsync(TEMP_PATH).then(function () {
         quality: '247',
         range: '0-' + (videoInfo.headerEnd + 1)
     }).pipe(stream));
-
-    return streamToPromise(videoStream);
 }).then(function () {
     var decoder = new matroska.Decoder();
     
