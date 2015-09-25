@@ -10,9 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "2.10.1",
+    "bluebird-retry": "0.5.1",
     "fast-levenshtein": "1.0.7",
     "fluent-ffmpeg": "2.0.1",
     "lodash": "3.10.1",
+    "matroska": "2.2.2",
     "node-tesseract": "0.2.7",
     "printf": "0.2.3",
     "rimraf": "2.4.3",
