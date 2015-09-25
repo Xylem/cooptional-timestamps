@@ -32,7 +32,7 @@ fs.mkdirAsync(TEMP_PATH).then(function () {
     }).pipe(videoStream);
     
     return streamToPromise(videoStream);
-})then(function () {
+}).then(function () {
     console.log('Generating frames');
 
     return new Promise(function (resolve, reject) {
