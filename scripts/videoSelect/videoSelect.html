@@ -1,0 +1,21 @@
+<div ng-controller="videoSelectController" layout="column" ng-cloak class="md-inline-form">
+    <main layout-padding flex="grow">
+        <form name="videoForm">
+            <md-input-container class="md-block">
+                <label>Video URL</label>
+                <input ng-model="videoData.url" ng-change="loadVideoData()" required type="url" name="url">
+                <div ng-messages="videoForm.url.$error">
+                    <div ng-message="required">This is required.</div>
+                    <div ng-message="url">This is not a valid URL.</div>
+                </div>
+            </md-input-container>
+        </form>
+
+        <md-list-item class="md-2-line am-fade-and-slide-left" ng-if="videoData.descriptors">
+            <img ng-src="{{ videoData.descriptors.iurlsd }}" class="md-avatar" />
+            <div class="md-list-item-text">
+                <h3>{{ videoData.descriptors.title }}</h3>
+            </div>
+        </md-list-item>
+    </main>
+</div>

@@ -1,0 +1,14 @@
+<div ng-cloak flex>
+    <md-tabs md-dynamic-height class="md-primary" md-selected="selectedIndex" md-align-tabs="top" flex>
+        <md-tab ng-repeat="tab in tabs" label="{{tab.title}}" ng-disabled="($index !== 0 && !tabReady($index - 1)) || (selectedIndex !== $index && !tabReady(selectedIndex))">
+        </md-tab>
+    </md-tabs>
+
+    <div ng-repeat="tab in tabs" flex>
+        <ng-include ng-if="selectedIndex === $index" src="'scripts/' + tab.content + '/' + tab.content + '.html'"></ng-include>
+    </div>
+
+    <md-button class="md-fab md-fab-bottom-right md-primary md-hue-2 am-fade-and-slide-right" ng-show="tabReady(selectedIndex) && selectedIndex !== tabs.length - 1" ng-click="nextStep()">
+        <md-icon md-svg-src="img/icons/arrow_forward.svg" class="s36"></md-icon>
+    </md-button>
+</div>

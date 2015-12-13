@@ -1,0 +1,12 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+main {
+    height: calc(100vh - 48px);
+}
+
+textarea {
+    resize: none;
+    white-space: nowrap;
+}

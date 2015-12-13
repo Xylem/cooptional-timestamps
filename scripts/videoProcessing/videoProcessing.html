@@ -1,0 +1,10 @@
+<div ng-controller="videoProcessingController" ng-cloak>
+    <main ng-if="!pipeline" flex="grow" layout="column" layout-align="center center" layout-padding>
+        <p>There is no appropriate video format available to start processing. Please try again later.</p>
+    </main>
+    <main ng-if="pipeline && progressText" flex="grow" layout="column" layout-align="center center" layout-padding>
+        <h4>Using {{ pipeline.name }} pipeline</h4>
+        <p>{{ progressText }}</p>
+        <md-progress-linear md-mode="{{ maxProgress ? 'determinate' : 'indeterminate' }}" value="{{ progressValue }}"></md-progress-linear>
+    </main>
+</div>
