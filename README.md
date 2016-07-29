@@ -16,6 +16,8 @@ Usage
 
 Run the app, provide the link, fiddle with settings, clean up the output.
 
+Tutorial: http://imgur.com/a/PwYEk
+
 License
 =======
 
