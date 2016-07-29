@@ -53,6 +53,7 @@
             $scope.videoData.filteredTimestamps.forEach(function (timestamp) {
                 timestamp.time = timestampsFilteringService.formatAsTime(timestamp.timestamp,
                     $scope.filterSettings.timestampsOffset);
+                timestamp.timestamp -= $scope.filterSettings.timestampsOffset;
             });
 
             return filteredTimestamps;
